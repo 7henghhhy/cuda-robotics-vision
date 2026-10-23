@@ -32,11 +32,24 @@ Remote: https://github.com/7henghhhy/cuda-robotics-vision
 
 These checks are intentionally deferred until the Y7000P is available.
 
-### Next session: Day 2
+## Day 2–4 — PyTorch Tensor fundamentals
 
-Read the PyTorch Tensor tutorial and run five small tensor examples covering shape, dtype, reshape/view, indexing, and device.
+### Completed
 
-On the current Mac, use CPU or MPS for the device comparison. Do not label the result as CUDA performance.
+- Completed the PyTorch Tensor tutorial study in Colab, covering tensor creation, dtype, shape, indexing/slicing, joining, arithmetic, single-element extraction, in-place operations, and the NumPy bridge.
+- Explained the difference between CPU storage and accelerator storage. `torch.rand(...)` creates a CPU tensor by default; the tensor must be explicitly moved with `.to(...)` and its device printed again to verify the move.
+- Explained Python object references versus C values/pointers, including rebinding versus mutating an existing object.
+- Explained PyTorch `copy_(y)` versus `clone()`: `copy_` writes into an existing destination tensor, while `clone()` allocates an independent data copy.
+
+### Evidence and limits
+
+- Source notebook: PyTorch `tensorqs_tutorial.ipynb` opened in Google Colab.
+- Observed tutorial output: shape `torch.Size([3, 4])`, dtype `torch.float32`, and device `cpu` before the later accelerator-transfer step.
+- The Colab runtime displayed a T4 accelerator, but no CUDA timing or benchmark result was collected. This learning record does not claim RTX 4060 performance.
+
+### Next session: Day 5
+
+Study PyTorch autograd: `requires_grad`, `grad_fn`, and disabling gradient tracking. Complete one runnable gradient example.
 
 ### Evidence policy
 
