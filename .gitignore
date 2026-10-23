@@ -1,0 +1,25 @@
+# Build products
+build/
+cmake-build-*/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Local profiling and generated reports
+*.ncu-rep
+*.qdrep
+*.nsys-rep
+*.log
+
+# Local secrets and machine-specific configuration
+.env
+*.local
