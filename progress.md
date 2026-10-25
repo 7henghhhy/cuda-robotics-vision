@@ -47,9 +47,20 @@ These checks are intentionally deferred until the Y7000P is available.
 - Observed tutorial output: shape `torch.Size([3, 4])`, dtype `torch.float32`, and device `cpu` before the later accelerator-transfer step.
 - The Colab runtime displayed a T4 accelerator, but no CUDA timing or benchmark result was collected. This learning record does not claim RTX 4060 performance.
 
-### Next session: Day 5
+## Day 5 — PyTorch autograd
 
-Study PyTorch autograd: `requires_grad`, `grad_fn`, and disabling gradient tracking. Complete one runnable gradient example.
+### Completed
+
+- Completed Day 5 through the PyTorch autograd material: `requires_grad`, `grad_fn`, and disabling gradient tracking.
+
+### Evidence and limits
+
+- Completion was confirmed by the user on 2026-10-25.
+- The exact Day 5 code and raw output were not saved in this repository, so no numerical result is claimed.
+
+### Next session: Day 6
+
+Continue GPU Puzzles 1–2 and keep the short indexing notes under `docs/`.
 
 ### Evidence policy
 

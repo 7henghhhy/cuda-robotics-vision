@@ -19,7 +19,8 @@ The first candidate operation is RGB-to-grayscale or image normalization. The op
 | Milestone | Status |
 |---|---|
 | Repository and experiment log | In progress |
-| PyTorch / GPU indexing preparation | Not started |
+| PyTorch fundamentals through D5 | Complete |
+| GPU indexing preparation | In progress |
 | `vector_add` CUDA warm-up | Not started |
 | Image preprocessing kernel | Not started |
 | Correctness tests | Not started |
